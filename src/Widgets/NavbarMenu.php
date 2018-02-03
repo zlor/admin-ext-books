@@ -11,7 +11,7 @@ class NavbarMenu implements Renderable
     {
         $current_book_flag = config('admin.book_flag')?:'';
 
-        return BookModel::whereNotIn('code', [$current_book_flag])->query()->orderBy('id', 'desc')->take($limit)->get();
+        return BookModel::query()->whereNotIn('code', [$current_book_flag])->orderBy('id', 'desc')->take($limit)->get();
     }
 
     public function render()
