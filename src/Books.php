@@ -4,7 +4,7 @@ namespace Encore\Admin\Book;
 
 use Encore\Admin\Extension;
 use Encore\Admin\Facades\Admin;
-use Encore\Admin\Message\Widgets\NavbarMenu;
+use Encore\Admin\Book\Widgets\NavbarMenu;
 use Illuminate\Support\Facades\Route;
 
 class Books extends Extension

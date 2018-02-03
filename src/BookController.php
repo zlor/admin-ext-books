@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Message;
+namespace Encore\Admin\Book;
 
 use Carbon\Carbon;
 use Encore\Admin\Auth\Database\Administrator;

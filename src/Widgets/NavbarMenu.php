@@ -1,8 +1,8 @@
 <?php
 
-namespace Encore\Admin\Message\Widgets;
+namespace Encore\Admin\Book\Widgets;
 
-use Encore\Admin\Message\MessageModel;
+use Encore\Admin\Book\BookModel;
 use Illuminate\Contracts\Support\Renderable;
 
 class NavbarMenu implements Renderable
