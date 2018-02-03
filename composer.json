@@ -1,0 +1,35 @@
+{
+    "name": "zlor/admin-ext-books",
+    "description": "Book extension for laravel-admin",
+    "type": "library",
+    "keywords": [],
+    "homepage": "https://github.com/zlor/admin-ext-books",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zl",
+            "email": "731545922@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+        "encore/laravel-admin": "1.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\Admin\\Book\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\Admin\\Book\\BookServiceProvider"
+            ]
+        }
+    }
+}
