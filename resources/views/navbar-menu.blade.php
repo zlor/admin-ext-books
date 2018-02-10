@@ -38,16 +38,17 @@
             <!-- inner menu: contains the actual data -->
             <ul class="menu">
                 @foreach($books as $book)
-                <li><!-- start book -->
+                <li style="padding: .3em;background: #efefef;margin: .1em"><!-- start book -->
                     <a href="{{ $book->url }}">
                         {{--<div class="pull-left">--}}
                             {{--<img src="{{$book->icon?:''}}" class="img-circle" alt="User Image">--}}
                         {{--</div>--}}
                         <h4>
                             {{$book->title}}
-                            <small><i class="fa fa-clock-o"></i> {{ $book->created_at->diffForHumans() }}</small>
+
                         </h4>
                     </a>
+                    <small><i class="fa fa-clock-o"></i> {{ $book->created_at->diffForHumans() }}</small>
                 </li>
                 @endforeach
             </ul>
